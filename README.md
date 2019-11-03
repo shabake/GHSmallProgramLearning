@@ -1,6 +1,6 @@
 ## GHSmallProgramLearning
 
-### 从入门到精通小程序开发学习笔记【小码哥教育】
+### 从入门到精通小程序开发学习笔记
 
 [课程链接](https://ke.qq.com/course/435191)
 
