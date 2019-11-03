@@ -5,5 +5,10 @@ Page({
     },
     dobanLogin: function(){
         console.log('3');
+    },
+    clickPrivacy: function() {
+        wx.navigateTo({
+            url: '/pages/protocol/protocol',
+        });
     }
 })

@@ -4,6 +4,7 @@
     align-items: center;
     justify-items: center;
     padding: 0 30rpx;
+    height: 100%;
 }
 
 .container .logo {
@@ -28,5 +29,22 @@
 .container .isHaveAcount {
     margin-top: 30rpx;
     color: rgb(88, 189, 58);
-    border:2rpx solid rgb(88, 189, 58);
+    border: 2rpx solid rgb(88, 189, 58);
+}
+
+.container .protocol {
+    margin-bottom: 10rpx;
+    font-size: 20rpx;
+    display: flex;
+    position: absolute;
+    bottom: 50rpx;
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.container .protocol .privacyAgreement {
+    color: rgb(88, 189, 58);
+    margin-left: 10rpx;
 }

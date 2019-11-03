@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/login/login"
+    "pages/login/login",
+    "pages/protocol/protocol"
   ],
   "window": {
     "backgroundTextStyle": "light",
