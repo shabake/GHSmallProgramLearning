@@ -1,0 +1,14 @@
+<!-- 父容器 -->
+<view class="container"> 
+    <!-- logo  -->
+    <image class="logo" src="/assets/imgs/ic_launcher.png" />
+    <!-- 微信登录 -->
+    <view class="wechat btn-login" bind:tap="wechatLogin">
+    微信登录
+    </view>
+    <!-- 已有豆瓣账户登录 -->
+    <view class="isHaveAcount btn-login" bind:tap="dobanLogin">
+    已有豆瓣账户登录
+    </view>
+</view>
+  
