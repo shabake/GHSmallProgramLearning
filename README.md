@@ -4,7 +4,8 @@
 
 [课程链接](https://ke.qq.com/course/435191)
 
-![image](https://10.url.cn/qqke_course_info/ajNVdqHZLLDehufUMuwnqc7oKklJakX3Tian9jn01cIliaCdPXZkmIEZRs3V4VW9lV8LwGcvRd2ks/)
+小程序始于微信，直面10亿用户，需求引发市场，因此也掀起了一股小程序开发的热潮。但大部分想要进入这个市场的朋友们却因为缺乏技术支持无法迎上这一大好趋势。
+学习完该课不仅能学到小程序的设计及制作技术，还能培养市场思维、用户思维、设计思维，并且掌握如何利用自身技术制作出吸引用户，产出更多商业价值的产品。
 
 [2019 10 25 登录页面](https://github.com/shabake/GHSmallProgramLearning/wiki/2019-10-25-登录页面)
 
