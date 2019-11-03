@@ -1,0 +1,9 @@
+<!-- pages/me/me.wxml -->
+<view class="container">
+    <!-- header -->
+    <view class="meHeader">
+        <image class="meHeaderImage" src="/assets/imgs/bg_mine_login.png" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
+        <!-- 登录按钮 -->
+        <view class="login" bind:tap="headerLogin">登录</view>
+    </view>
+</view>
