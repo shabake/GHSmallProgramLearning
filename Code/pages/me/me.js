@@ -1,6 +1,8 @@
 // pages/me/me.js
 Page({
   headerLogin: function() {
-    console.log('1');
+    wx.navigateTo({
+      url: '/pages/login/login',
+    });
   }
 })

@@ -10,6 +10,8 @@
 
 #### 笔记
 
+[2019 11 04](https://github.com/shabake/GHSmallProgramLearning/wiki/2019-11-04-我的页面)
+
 [2019 10 25 登录页面](https://github.com/shabake/GHSmallProgramLearning/wiki/2019-10-25-登录页面)
 
 [2019 10 18 flex布局](https://github.com/shabake/GHSmallProgramLearning/wiki/2019-10-18-flex布局)
