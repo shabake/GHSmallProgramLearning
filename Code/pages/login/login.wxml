@@ -10,9 +10,10 @@
     <view class="isHaveAcount btn-login" bind:tap="dobanLogin">
     已有豆瓣账户登录
     </view>
-    
+    <!-- 底部登录协议 -->
     <view class="protocol">
         登录表示同意
+        <!-- 豆瓣使用协议/隐私协议 -->
         <view class="privacyAgreement" bind:tap="clickPrivacy">
             豆瓣使用协议/隐私协议
         </view>

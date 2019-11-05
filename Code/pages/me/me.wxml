@@ -1,10 +1,23 @@
 <!-- pages/me/me.wxml -->
 <view class="container">
-    <!-- header -->
+    <!-- 顶部整体 -->
     <view class="meHeader">
-        <!-- 登录按钮 -->
+        <!-- headerImage -->
         <image class="meHeaderImage" src="/assets/imgs/bg_mine_login.png" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
         <!-- 登录按钮 -->
         <view class="login" bind:tap="headerLogin">登录</view>
+    </view>
+    <!-- 底部整体 -->
+    <view class="items-wapper">
+        <!-- 底部整体第一行 -->
+        <view class="items-wapper-title">
+            <!-- 我的书影音 -->
+            <view class="title">我的书影音</view>
+            <!-- 登录查看 -->
+            <view class="items-wapper-title-rightItem">
+                <view class="look" bind:tap="headerLogin">登录查看</view>
+                <view class="arrow"></view>
+            </view>
+        </view>
     </view>
 </view>
