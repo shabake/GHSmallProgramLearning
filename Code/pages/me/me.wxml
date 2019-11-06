@@ -19,5 +19,16 @@
                 <view class="arrow"></view>
             </view>
         </view>
+        <!-- 底部整体其他行 -->
+        <view class="items-wapper-row">
+            <!-- 左侧部部分 -->
+            <view>
+                <!-- 图标 -->
+                <image class="icon" src="/assets/imgs/ic_cat_music.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                  
+            </view>
+            <!-- 右侧部部分 -->
+            <view></view>
+        </view>
     </view>
 </view>

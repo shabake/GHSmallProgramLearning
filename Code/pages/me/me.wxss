@@ -33,14 +33,14 @@
 
 .container .items-wapper {
     margin-top: 30rpx;
-    margin-left: 30rpx;
-    margin-right: 30rpx;
 }
 
 .container .items-wapper .items-wapper-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
 }
 
 .container .items-wapper .items-wapper-title .title{
@@ -64,4 +64,16 @@
     border-bottom: 4rpx solid #999999;
     transform: rotate(-45deg);
     margin-left: 10rpx;
+}
+
+.container .items-wapper-row {
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+.container .items-wapper-row .icon {
+    background-color:blue;
+    width: 100rpx;
+    height: 100rpx;
 }
