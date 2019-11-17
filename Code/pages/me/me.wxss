@@ -1,7 +1,11 @@
 /* pages/me/me.wxss */
+page {
+  height: 100%;
+}
+
 .container {
-    width: 100;
-    height: 100;
+  display: flex;
+  flex-direction: column;
 }
 
 .container .meHeader {
@@ -66,23 +70,20 @@
     margin-left: 10rpx;
 }
 
-.container .items-wapper-row {
+.container .items-wapper-info {
     display: flex;
+    padding-left:15rpx;
+    padding-right:15rpx;
     flex-direction: row;
-    background-color: orange;
-    width: 100%;
-}
-
-.container .items-wapper-row .icon {
-    width: 80rpx;
-    height: 80rpx;
-    display: flex;
-    flex-direction: column;
-    background-color: blue;
-}
-
-.container .items-wapper-row .leftInfo {
     background-color: red;
+}
+
+.container .items-wapper-info .icon {
     width: 80rpx;
     height: 80rpx;
+    background-color: black;
+}
+
+.container .items-wapper-info .info {
+    background-color: blue;
 }

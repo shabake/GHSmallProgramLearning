@@ -20,7 +20,7 @@
             </view>
         </view>
         <!-- 底部整体其他行 -->
-        <view class="items-wapper-row">
+        <view class="items-wapper-info">
             <!-- 左侧部部分图标观影分析看过 -->
             <view>
                 <!-- 图标 -->
@@ -31,22 +31,22 @@
                     <view class="leftInfo">
                         <!-- 观影分析 -->
                         <view class="top">
-                            
+                            观影分析
                         </view>                       
                          <!-- 观影分析 -->
                         <view class="bottom">
                             <view class="count">
-                                
+                                 0
                             </view>
                             <view class="countInfo">
-                                
+                                 看过
                             </view>
                         </view>                          
                     </view>                   
                      <!-- 右侧info -->
                     <view class="rightInfo">
                         <view class="text">
-                            
+                            标记10部影片,开启影响分析
                         </view>
                         <view class="begin">
                             立即开启
