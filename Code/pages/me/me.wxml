@@ -21,14 +21,43 @@
         </view>
         <!-- 底部整体其他行 -->
         <view class="items-wapper-row">
-            <!-- 左侧部部分 -->
+            <!-- 左侧部部分图标观影分析看过 -->
             <view>
                 <!-- 图标 -->
                 <image class="icon" src="/assets/imgs/ic_cat_music.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-                  
-            </view>
-            <!-- 右侧部部分 -->
-            <view></view>
+                <!-- 右侧整体 -->
+                <view class="info">
+                    <!-- 左侧info -->
+                    <view class="leftInfo">
+                        <!-- 观影分析 -->
+                        <view class="top">
+                            
+                        </view>                       
+                         <!-- 观影分析 -->
+                        <view class="bottom">
+                            <view class="count">
+                                
+                            </view>
+                            <view class="countInfo">
+                                
+                            </view>
+                        </view>                          
+                    </view>                   
+                     <!-- 右侧info -->
+                    <view class="rightInfo">
+                        <view class="text">
+                            
+                        </view>
+                        <view class="begin">
+                            立即开启
+                        </view>
+                          
+                        <view class="arrow">
+
+                        </view>
+                    </view>
+                </view>
+            </view> 
         </view>
     </view>
 </view>

@@ -23,7 +23,7 @@
 .container .meHeader .login {
     background-color: white;
     height: 80rpx;
-    width: 200rpx;
+    width: 260rpx;
     color: rgb(88, 189, 58);
     text-align: center;
     line-height: 80rpx;
@@ -44,7 +44,7 @@
 }
 
 .container .items-wapper .items-wapper-title .title{
-    font-size: 40rpx;
+    font-size: 42rpx;
     font-weight: bold;
 }
 
@@ -67,13 +67,22 @@
 }
 
 .container .items-wapper-row {
-    background-color: red;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    background-color: orange;
+    width: 100%;
 }
 
 .container .items-wapper-row .icon {
-    background-color:blue;
-    width: 100rpx;
-    height: 100rpx;
+    width: 80rpx;
+    height: 80rpx;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.container .items-wapper-row .leftInfo {
+    background-color: red;
+    width: 80rpx;
+    height: 80rpx;
 }
