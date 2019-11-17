@@ -72,18 +72,67 @@ page {
 
 .container .items-wapper-info {
     display: flex;
-    padding-left:15rpx;
-    padding-right:15rpx;
+    padding-left:30rpx;
+    padding-right:30rpx;
     flex-direction: row;
-    background-color: red;
 }
 
 .container .items-wapper-info .icon {
-    width: 80rpx;
-    height: 80rpx;
-    background-color: black;
+    width: 100rpx;
+    height: 100rpx;
 }
 
 .container .items-wapper-info .info {
-    background-color: blue;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.container .items-wapper-info .info .leftInfo {
+    padding-left:10rpx;
+}
+
+.container .items-wapper-info .info .top {
+    font-size: 30rpx;
+}
+
+.container .items-wapper-info .info .bottom {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    font-size: 40rpx;
+}
+
+.container .items-wapper-info .info .bottom .count {
+    font-weight: bottom;
+}
+
+.container .items-wapper-info .info .bottom .countInfo{
+    padding-left:10rpx;
+    font-size: 30rpx;
+}
+
+.container .items-wapper-info .info .rightInfo {
+    display: flex;
+    font-size: 30rpx;
+    align-items:center;
+    flex-direction: row;
+}
+
+.container .items-wapper-info .info .rightInfo .text {
+    margin-right:15rpx;
+    align-items:center;
+    background-color:red;
+}
+
+.container .items-wapper-info .info .rightInfo .begin {
+    background-color :#e5e5e5;
+    padding-top:10rpx;
+    padding-bottom :10rpx;
+    padding-left:10rpx;
+    padding-right:10rpx;
+    border-radius:10rpx;
+    margin-right:5rpx;
+    font-size: 28rpx;
 }
