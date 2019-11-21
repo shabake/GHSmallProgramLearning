@@ -20,8 +20,7 @@
             </view>
         </view>
         <!-- 底部整体其他行 -->
-        <view wx:for="{{ items }}" class="items-wapper-info" wx:for-item="item"> 
-                  
+        <view wx:for="{{ items }}" class="items-wapper-info" wx:key="abcd">
             <!-- 图标 -->
             <image class="icon" src="/assets/imgs/{{item.icon}} " mode="aspectFit" lazy-load="false" binderror="" bindload="" />
             <!-- 右侧整体 -->
@@ -30,18 +29,20 @@
                     <!-- 左侧info -->
                     <view class="leftInfo">
                         <!-- 观影分析 -->
-                        <view class="top"> {{item.title}} </view>
+                        <view class="top">{{item.title}}</view>
                         <!--  -->
                         <view class="bottom">
-                            <view class="count"> {{item.count}} </view>
+                            <view class="count">{{item.count}}</view>
                             <view class="countInfo">{{item.has}}</view>
                         </view>
                     </view>
                     <!-- 右侧info -->
-                    <view class="rightInfo">
+                    <view data-index="{{ index }}" class="rightInfo" bind:tap="begin">
                         <text class="text">{{item.mark}}</text>
-                        <view class="begin">立即开启</view>
-                        <view class="arrow"></view>
+                        <view class="rightItem">
+                            <view class="begin">立即开启</view>
+                            <view class="arrow"></view>
+                        </view>
                     </view>
                 </view>
                 <!-- 分割线 -->

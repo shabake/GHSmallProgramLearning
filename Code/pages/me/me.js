@@ -4,10 +4,10 @@ Page({
     items: [
       {
         icon: 'ic_cat_movie.png',
-        title: '观影分析1',
+        title: '观影分析',
         count: '0',
         has: '看过',
-        mark: '标记10部影片\n开启影响分析'
+        mark: '标记10部部影部影影片\n开启影响分析'
       },
 
       {
@@ -15,7 +15,7 @@ Page({
         title: '读书分析',
         count: '1',
         has: '读过',
-        mark: '标记10部影片\n开启影响分析'
+        mark: '标记10部影部影片\n开启影响分析'
       },
       {
         icon: 'ic_cat_music.png',
@@ -26,10 +26,15 @@ Page({
       },
     ]
   },
+
   // 登录事件
   headerLogin: function () {
     wx.navigateTo({
       url: '/pages/login/login',
     });
+  },
+  // 点击事件
+  begin:function(evt) {
+    console.log(evt);
   },
 })
