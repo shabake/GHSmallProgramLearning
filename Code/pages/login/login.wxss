@@ -19,7 +19,6 @@
     line-height: 80rpx;
     text-align: center;
     border-radius: 10rpx;
-    box-shadow: 211rpx 21rpx 10rpx  0 rgba(0, 0, 0,1);
 }
 
 .container .wechat {

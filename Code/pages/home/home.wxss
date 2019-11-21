@@ -1,0 +1,25 @@
+/* pages/home/home.wxss */
+
+.header {
+    background-color: green;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    padding: 0 15rpx;
+}
+
+.search-wrapper {
+    background-color: white;
+    border-radius: 10rpx;
+    width: 100%;
+    height: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-wrapper .image {
+    width: 32rpx;
+    height: 32rpx;
+    margin-right: 10rpx;
+}

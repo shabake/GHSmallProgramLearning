@@ -35,7 +35,6 @@ page {
     border-radius: 40rpx;
     font-size: 30rpx;
     box-shadow: 2rpx 2rpx 10rpx 0 rgba(0, 0, 0,0.2);
-
 }
 
 .container .items-wapper {
