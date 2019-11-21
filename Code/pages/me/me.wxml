@@ -44,9 +44,7 @@
                     </view>                   
                      <!-- 右侧info -->
                     <view class="rightInfo">
-                        <text class="text">
-                            标记10部影片\n开启影响分析
-                        </text>
+                        <text class="text">标记10部影片\n开启影响分析</text>
                         <view class="begin">
                             立即开启
                         </view>

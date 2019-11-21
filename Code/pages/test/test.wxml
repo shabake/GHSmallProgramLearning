@@ -1,0 +1,11 @@
+<!--pages/test/test.wxml-->
+
+<view class="text1">
+    <text>都写在一行\n可以避免上方留白</text>
+</view>
+
+<view class="text2">
+    <text>
+    如果换行的话\n上方会有一段间隙
+    </text>
+</view>

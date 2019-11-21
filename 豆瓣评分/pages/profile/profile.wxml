@@ -1,0 +1,88 @@
+<!--pages/profile/profile.wxml-->
+<view class="container">
+  <view>
+    <view class="login-wrapper">
+      <view class="login">登录</view>
+      <image src="/assets/imgs/bg_mine_login.png" mode="aspectFill" />
+    </view>
+
+    <view class="items-wrapper">
+      <view class="title-wrapper">
+        <view class="title">我的书影音</view>
+        <view class="view">
+          登录查看
+          <view class="arrow"></view>
+        </view>
+      <view class="item">
+        <image class="icon" src="/assets/imgs/{{ items[0].icon }}" />
+        <view class="info-wrapper">
+          <view class="info">
+            <view class="left">
+              <view class="top">{{ items[0].title }}</view>
+              <view class="bottom">
+                <view class="count">{{ items[0].count }}</view>
+                <view class="text">{{ items[0].has }}</view>
+              </view>
+            </view>
+            <view class="right">
+              <text class="text">{{ items[0].mark }}</text>
+              <view class="begin">立即开启</view>
+              <view class="arrow"></view>
+            </view>
+          </view>
+          <view class="divider"></view>
+        </view>
+      </view>
+      
+      <view class="item">
+        <image class="icon" src="/assets/imgs/{{ items[1].icon }}" />
+        <view class="info-wrapper">
+          <view class="info">
+            <view class="left">
+              <view class="top">{{ items[1].title }}</view>
+              <view class="bottom">
+                <view class="count">{{ items[1].count }}</view>
+                <view class="text">{{ items[1].has }}</view>
+              </view>
+            </view>
+            <view class="right">
+              <text class="text">{{ items[1].mark }}</text>
+              <view class="begin">立即开启</view>
+              <view class="arrow"></view>
+            </view>
+          </view>
+          <view class="divider"></view>
+        </view>
+      </view>
+      
+      <view class="item">
+        <image class="icon" src="/assets/imgs/{{ items[2].icon }}" />
+        <view class="info-wrapper">
+          <view class="info">
+            <view class="left">
+              <view class="top">{{ items[2].title }}</view>
+              <view class="bottom">
+                <view class="count">{{ items[2].count }}</view>
+                <view class="text">{{ items[2].has }}</view>
+              </view>
+            </view>
+            <view class="right">
+              <text class="text">{{ items[2].mark }}</text>
+              <view class="begin">立即开启</view>
+              <view class="arrow"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    
+    </view>
+  </view>
+   
+  </view>
+
+</view>
+
+   
+
+  
+  

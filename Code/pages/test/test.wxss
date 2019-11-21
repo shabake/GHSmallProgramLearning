@@ -1,0 +1,13 @@
+/* pages/test/test.wxss */
+
+.text1 {
+    background-color: white;
+    font-size:40rpx;
+    line-height: 40rpx;
+}
+
+.text2 {
+    background-color: orange;
+    font-size:40rpx;
+    line-height: 40rpx;
+}
