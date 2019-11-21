@@ -3,7 +3,7 @@ Page({
   data: {
     items: [
       {
-        icon: 'ic_cat_music.png',
+        icon: 'ic_cat_movie.png',
         title: '观影分析1',
         count: '0',
         has: '看过',
@@ -11,9 +11,9 @@ Page({
       },
 
       {
-        icon: 'ic_cat_music.png',
+        icon: 'ic_cat_book.png',
         title: '读书分析',
-        count: '0',
+        count: '1',
         has: '读过',
         mark: '标记10部影片\n开启影响分析'
       },
