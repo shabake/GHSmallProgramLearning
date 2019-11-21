@@ -44,12 +44,12 @@ page {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 30rpx;
-    margin-right: 30rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
 }
 
-.container .items-wapper .items-wapper-title .title{
-    font-size: 42rpx;
+.container .items-wapper .items-wapper-title .title {
+    font-size: 36rpx;
     font-weight: bold;
 }
 
@@ -71,23 +71,41 @@ page {
     margin-left: 10rpx;
 }
 
+/*整体一行*/
 .container .items-wapper-info {
+    margin-top: 20rpx;
     display: flex;
     padding-left:30rpx;
-    padding-right:30rpx;
+    padding-right:20rpx;
     flex-direction: row;
 }
 
+/*左侧图片*/
 .container .items-wapper-info .icon {
     width: 100rpx;
     height: 100rpx;
 }
 
+/*右侧整体*/
 .container .items-wapper-info .info {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/*右侧整体上半部分*/
+.container .items-wapper-info .info .top {
     display: flex;
-    width:100%;
     justify-content: space-between;
     align-items:center;
+    flex-direction: row;
+}
+
+/*分割线*/
+.container .items-wapper-info .info .splitLine {
+    width: 100%;
+    height: 0.1rpx;
+    background-color: lightgray;
+    margin-top: 20rpx;
 }
 
 .container .items-wapper-info .info .leftInfo {
@@ -118,13 +136,14 @@ page {
     display: flex;
     align-items:center;
     flex-direction: row;
-    width: 100%;
     justify-content: flex-end;
+    padding-right: 10rpx;
 }
 
 .container .items-wapper-info .info .rightInfo .text {
     margin-right:15rpx;
     text-align: center;
+    font-size: 30rpx;
 }
 
 .container .items-wapper-info .info .rightInfo .begin {

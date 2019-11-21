@@ -1,26 +1,79 @@
 // pages/home/home.js
 Page({
   data: {
-    movies: []
+    allMovies: [
+      {
+        title: '影院热映',
+        url: 'v2/movie/in_theaters',
+        movies: []
+      },
+      {
+        title: '新片榜',
+        url: 'v2/movie/new_movies',
+        movies: []
+      },
+      {
+        title: '口碑榜',
+        url: 'v2/movie/weekly',
+        movies: []
+      },
+      {
+        title: '北美票房榜',
+        url: 'v2/movie/us_box',
+        movies: []
+      },
+      {
+        title: 'Top250',
+        url: 'v2/movie/top250',
+        movies: []
+      }
+    ]
   },
   onLoad: function() {
-    this.loadCity(this.loadData);
+    wx.setNavigationBarColor({
+      frontColor: '#ffffff',
+      backgroundColor: '#42BD55'
+    });
+
+    this.loadLocalData();
+    // this.loadCity((city) => {
+    //   this.loadNewData(0, {city: city});
+    // });
+    // this.loadNewData(1);
+    // this.loadNewData(2);
+    // this.loadNewData(3);
+    // this.loadNewData(4);
   },
-  loadData: function(city) {
+  loadLocalData: function() {
+    for (let index = 0; index < this.data.allMovies.length; index++) {
+      let obj = this.data.allMovies[index];
+      obj.movies = wx.getStorageSync(obj.title);
+    }
+    this.setData(this.data);
+  },
+  loadNewData: function(idx, params) {
     wx.request({
-      url: 'https://douban-api.uieee.com/v2/movie/in_theaters',
-      data: { city: city },
+      url: wx.db.url(this.data.allMovies[idx].url),
+      data: params,
       header: {'content-type':'json'},
       success: (res) => {
-        let movies = res.data.subjects;
+        const movies = res.data.subjects;
+        let obj = this.data.allMovies[idx];
+        obj.movies = [];
         for (let index = 0; index < movies.length; index++) {
-          this.updateMovie(movies[index]);
+          let movie = movies[index].subject || movies[index];
+          this.updateMovie(movie);
+          obj.movies.push(movie);
         }
-        this.setData({  movies: movies });
-        console.log(this.data);
+        this.setData(this.data);
+        // 将movies数组缓存到本地
+        wx.setStorage({
+          key: obj.title,
+          data: obj.movies
+        });
       },
       fail: () => {
-        wx.db.toastError('获取热映失败');
+        wx.db.toast(`获取${ this.data.allMovies[idx].title }失败`);
       }
     });
   },
@@ -60,5 +113,12 @@ Page({
     movie.stars.on = parseInt(stars / 10);
     movie.stars.half = (stars - (movie.stars.on) * 10) > 0;
     movie.stars.off = parseInt((50 - stars) / 10);
+  },
+  viewMore: function(evt) {
+    const index = evt.currentTarget.dataset.index;
+    const obj = this.data.allMovies[index];
+    wx.navigateTo({
+      url: `/pages/list/list?title=${ obj.title }&url=${ obj.url }`
+    });
   }
 })

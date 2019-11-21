@@ -22,36 +22,31 @@
         <!-- 底部整体其他行 -->
         <view class="items-wapper-info">
             <!-- 左侧部部分图标观影分析看过 -->
-                <!-- 图标 -->
-                <image class="icon" src="/assets/imgs/ic_cat_music.png" mode="aspectFit" lazy-load="false" binderror="" bindload="" />
-                <!-- 右侧整体 -->
-                <view class="info">
+            <!-- 图标 -->
+            <image class="icon" src="/assets/imgs/ic_cat_music.png" mode="aspectFit" lazy-load="false" binderror="" bindload="" />
+            <!-- 右侧整体 -->
+            <view class="info">
+                <view class="top">
                     <!-- 左侧info -->
                     <view class="leftInfo">
                         <!-- 观影分析 -->
-                        <view class="top">
-                            观影分析
-                        </view>                       
-                         <!--  -->
+                        <view class="top">{{ items[0].title }}</view>
+                        <!--  -->
                         <view class="bottom">
-                            <view class="count">
-                                 0
-                            </view>
-                            <view class="countInfo">
-                                 看过
-                            </view>
-                        </view>                          
-                    </view>                   
-                     <!-- 右侧info -->
-                    <view class="rightInfo">
-                        <text class="text">标记10部影片\n开启影响分析</text>
-                        <view class="begin">
-                            立即开启
-                        </view>
-                        <view class="arrow">
+                            <view class="count">0</view>
+                            <view class="countInfo">看过</view>
                         </view>
                     </view>
-            </view> 
+                    <!-- 右侧info -->
+                    <view class="rightInfo">
+                        <text class="text">标记10部影片\n开启影响分析</text>
+                        <view class="begin">立即开启</view>
+                        <view class="arrow"></view>
+                    </view>
+                </view>
+                <!-- 分割线 -->
+                <view class="splitLine"></view>
+            </view>
         </view>
     </view>
 </view>

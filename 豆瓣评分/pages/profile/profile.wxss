@@ -80,10 +80,10 @@ page {
   margin-left: 15rpx;
 }
 
- .item:last-of-type .divider {
+/* .item:last-of-type .divider {
   visibility: hidden;
   display: none;
-} 
+} */
 
 .item {
   display: flex;

@@ -2,7 +2,20 @@
 App({
   onLaunch: function () {
     wx.db = {};
+    wx.db.url = (url) => {
+      return `https://douban-api.uieee.com/${url}`;
+    };
+    this.initToast();
     
+    const info = wx.getSystemInfoSync();
+    wx.db.statusBarHeight = info.statusBarHeight;
+    if (info.platform == 'android') {
+      wx.db.navBarHeight = 48;
+    } else {
+      wx.db.navBarHeight = 44;
+    }
+  },
+  initToast: function() {
     const toastTypeNormal = 0;
     const toastTypeSuccess = 1;
     const toastTypeError = 2;
