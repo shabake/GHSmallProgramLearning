@@ -1,18 +1,10 @@
-<!--pages/home/home.wxml-->
-
+<!-- pages/home/home.wxml -->
 <view>
     <view class="header">
         <view class="search-wrapper">
             <image class="image" src="/assets/imgs/ic_search.png" />
-            <view>
-                搜索
-            </view>
-              
+            <view class="search">搜索</view>
         </view>
     </view>
-    <view class="main">
-        
-    </view>
-      
+    <view class="main"></view>
 </view>
-  

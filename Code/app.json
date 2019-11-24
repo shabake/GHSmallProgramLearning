@@ -11,5 +11,10 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于获取影院信息"
+    }
+  },
   "sitemapLocation": "sitemap.json"
 }
