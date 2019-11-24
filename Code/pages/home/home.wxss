@@ -58,6 +58,10 @@
     margin-left: 10rpx;
 }
 
+.main .row {
+    margin-bottom: 30rpx;
+}
+
 .main .row .items{
     display: flex;
     white-space: nowrap; /**控制换行*/
@@ -73,15 +77,16 @@
     margin-left: 30rpx;
 }
 
-.main .row .items .photo{
-    width: 230rpx;
-    height: 370rpx;
+.main .row .items .photo {
+    width: 180rpx;
+    height: 223rpx;
     margin-bottom: 15rpx;
 }
 
-.main .row .items .title{
+.main .row .items .title {
     font-weight: bold;
     font-size: 30rpx;
+    text-overflow: ellipsis; /*超出文字裁剪*/
 }
 
 .main .row .items .star-wapper{
