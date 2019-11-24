@@ -1,7 +1,7 @@
 // pages/home/home.js
 Page({
-  
-  loadCity: function(success) {
+
+  loadCity: function (success) {
     wx.getLocation({
       success: (res) => {
         wx.request({
@@ -35,21 +35,27 @@ Page({
   },
 
   /**加载数据 */
-  loadData: function(city) {
+  loadData: function (city) {
     wx.request({
       url: 'https://douban.uieee.com/v2/movie/in_theaters',
-      data: {city:city},
-      header: {'content-type':'json'},
+      data: { city: city },
+      header: { 'content-type': 'json' },
       method: 'GET',
       dataType: 'json',
       responseType: 'text',
       success: (result) => {
         console.log(result);
+        this.setData({
+          movies : result.data.subjects /**取出数据 告诉页面重新加载数据 */
+        })
       },
-      fail: () => {},
-      complete: () => {}
+      fail: () => { },
+      complete: () => { }
     });
-      
+  },
+
+  data:{
+    movies:[]
   },
 
   onLoad: function () {

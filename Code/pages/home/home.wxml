@@ -6,5 +6,31 @@
             <view class="search">搜索</view>
         </view>
     </view>
-    <view class="main"></view>
+    <view class="main">
+        <view class="row">
+            <view class="title-wapper">
+                <view class="title">影院热映</view>
+                <view class="more">
+                    查看更多
+                    <view class="arrow"></view>
+                </view>
+            </view>
+            <scroll-view class="items" scroll-x="{{true}}" >
+                <view wx:for="{{movies}}" class="item" wx:key="ab">
+                    <image class="photo" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2572847101.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                    <view class="title">我和我的祖国</view>
+                    <view class="star-wapper">
+                        <view class="stars">
+                            <image class="star" src="/assets/imgs/rating_star_small_on.png" />
+                            <image class="star" src="/assets/imgs/rating_star_small_on.png" />
+                            <image class="star" src="/assets/imgs/rating_star_small_on.png" />
+                            <image class="star" src="/assets/imgs/rating_star_small_on.png" />
+                            <image class="star" src="/assets/imgs/rating_star_small_on.png" />
+                        </view>
+                        <view class="store">10分</view>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
 </view>

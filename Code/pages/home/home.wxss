@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     padding: 0 15rpx;
+    margin-bottom: 20rpx;
 }
 
 .search-wrapper {
@@ -25,6 +26,78 @@
 }
 
 .search-wrapper .search {
+    font-size: 32rpx;
+}
+
+.title-wapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30rpx ;
+    margin-bottom: 15rpx;
+}
+
+.title-wapper .title {
+    font-size: 30rpx;
+    font-weight: bold;
+}
+
+.title-wapper .more {
+    display: flex;
+    align-items: center;
+    font-size: 30rpx;
+    color: green;
+}
+
+.title-wapper .more .arrow {
+    width: 10rpx;
+    height: 10rpx;
+    border-right: 4rpx solid #999999;
+    border-bottom: 4rpx solid #999999;
+    transform: rotate(-45deg);
+    margin-left: 10rpx;
+}
+
+.main .row .items{
+    display: flex;
+    white-space: nowrap; /**控制换行*/
+}
+
+.main .row .items .item:last-of-type{ /**找到最后一个元素*/
+    margin-right: 30rpx;
+}
+
+.main .row .items .item { 
+    display: inline-flex; /**行类元素*/
+    flex-direction: column;
+    margin-left: 30rpx;
+}
+
+.main .row .items .photo{
+    width: 230rpx;
+    height: 370rpx;
+    margin-bottom: 15rpx;
+}
+
+.main .row .items .title{
+    font-weight: bold;
     font-size: 30rpx;
 }
 
+.main .row .items .star-wapper{
+    align-items: center;
+    display: flex;
+ }
+
+.main .row .items .star-wapper .stars{
+   display: flex;
+}
+
+.star {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.main .row .items .star-wapper .store{
+    font-size: 30rpx;
+}
